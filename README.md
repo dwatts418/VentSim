@@ -7,4 +7,6 @@ To measure the differential pressure created during ventilation, a closed respir
 My first in-line transducer (image below) was constructed from an expired EtCO2-ETT adapter, nebulizer T-piece, twist-tie, oxygen tubing to regulator adapter, hot glue, and lots of luck (for those thinking of a MacGyver reference, I tried to incorporate duct tape).  Since air is a fluid and compressible, we can model the flow of air using a branch of fluid dynamics called gasdynamics.  The differential pressure of the system can be measured between the two sampling ports during ventilation and passive exhalation (test lung collapsing).  I used these spirometer research papers here and here to develop this in-line transducer.
 
 The second version of the in-line transducer, and more practical, is a transducer from an expired Draeger Oxylog 3000 ventilator circuit.  Who would have thought they used such a thing on mechanical ventilators (I felt a little dumb when this realization came to me).
+
+https://dominickboyd.wordpress.com/2013/10/11/diy-deliberate-bvm-simulator/
 </p>
