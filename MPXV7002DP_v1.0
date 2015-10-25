@@ -1,0 +1,34 @@
+//VentSim v1.0
+//by Dominick C. Watts
+//08-25-2013
+
+int x = 0;
+int row = 0;
+int reading;
+float kPa;
+float rawcmH2O;
+float cmH2O;
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println("CLEARDATA");
+  Serial.println("LABEL,TIME,x,cmH2O");
+}
+
+void loop() {
+  reading = analogRead(A1);
+  kPa = (reading / 18) - 27.7777;
+  rawcmH2O = (kPa * 10.20);
+  cmH2O = abs(rawcmH2O - 12.47);
+  Serial.print("DATA,TIME,");
+  Serial.print(x);
+  Serial.print(",");
+  Serial.println(cmH2O);
+  row++;
+  x++;
+  if (row > 149) {
+    row = 0;
+    Serial.println("ROW,SET,2");
+  }
+  delay(200);
+}
